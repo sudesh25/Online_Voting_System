@@ -1,0 +1,28 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333; /* Text color */
+    background: linear-gradient(135deg, hsl(353, 100%, 72%), #bfe9ff); /* Colorful background gradient */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Container styles */
+.container {
+    max-width: 600px;
+    width: 90%; /* Set width to 90% of the viewport width */
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    background-color: hsl(353, 100%, 72%); /* Plan color for the main content area */
+    border-radius: 10px; /* Optionally add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optionally add box shadow for depth effect */
+    text-align: center; /* Center text within the container */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Text styles */
+b1 {
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold; /* Make text bold */
+    color: #333; /* Text color */
+}

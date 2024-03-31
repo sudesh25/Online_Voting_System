@@ -1,0 +1,111 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333; /* Text color */
+    background: linear-gradient(135deg, hsl(353, 100%, 72%), #bfe9ff); /* Colorful background gradient */
+}
+
+/* Container styles */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: hsl(353, 100%, 72%); /* Container background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.heading {
+    text-align: center; /* Center the heading */
+    margin-bottom: 30px; /* Increase the margin-bottom for more space */
+    color: #333; /* Set the color to black */
+}
+
+/* Table styles */
+.voting-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* Table background color */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.voting-table caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333; /* Set the color to black */
+}
+
+.voting-table th, .voting-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.voting-table th {
+    background-color: #2b6da0; /* Header background color */
+    color: #fff; /* Header text color */
+}
+
+.voting-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row background color */
+}
+
+/* Party name column */
+.voting-table td.party-name {
+    background-color: #f3a149; /* Set the background color to yellow */
+}
+/* Member name column */
+.voting-table td:nth-child(3) {
+    background-color: #6a83f2; /* Set the background color */
+    color: #fff; /* Text color */
+}
+
+
+
+/* Vote column */
+.voting-table td.vote {
+    background-color: #66ccff; /* Set the background color to light blue */
+}
+
+/* Button container styles */
+.button-container {
+    text-align: center;
+    margin-top: 20px; /* Add margin to separate from the table */
+}
+
+/* Button styles */
+.submit-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Button hover color */
+}
+
+/* CSS styles */
+.party-logo {
+    text-align: center; /* Align the content (logo) to the center */
+    background-color: #6aeda7; /* Add background color */
+    padding: 10px; /* Add padding for better visibility */
+}
+
+/* CSS styles */
+.party-logo {
+    text-align: center; /* Align the content (logo) to the center */
+}
+
+.party-logo img {
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+ 
