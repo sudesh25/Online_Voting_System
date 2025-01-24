@@ -2,6 +2,7 @@
 <html> 
 <head> 
     <title>Online Voting System</title> 
+
     <link rel="stylesheet" href="style.css">
 </head> 
 <body>  
@@ -14,14 +15,37 @@
         />  
         <h1>Welcome to Online Voting System</h1>
         <h2>Enter Your Voter ID</h2>
-        <input type="text" id="voterID" placeholder="Voter ID" class="input-box">
+        <input type="text" id="voterID" placeholder="Voter ID" maxlength="10" class="input-box" required>
         <h2>Enter Your Name</h2>
-        <input type="text" id="voterName" placeholder="Name" class="input-box">
-        <button type="submit" class="submit-button">Submit</button>
+        <input type="text" id="voterName" placeholder="Name" class="input-box" required>
+        <button type="submit" class="submit-button" onclick="handleClick()">Submit</button>
         <div class="box"> 
-            <!-- Your content goes here -->
+          
         </div>     
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    function handleClick(){
+        const voterID = document.getElementById('voterID').value;
+        const voterName = document.getElementById("voterName").value
+        sessionStorage.setItem("voterName", voterName)
+        sessionStorage.setItem("voterID", voterID)
+        if (voterID === '' || voterName === '') {
+                alert('Please enter both Voter ID and Name.');
+                event.preventDefault();
+            } else {    
+                axios.post("http://localhost:3000/signin",{
+                    voterName: sessionStorage.getItem("voterName"),
+                    voterID: sessionStorage.getItem("voterID")
+                })
+                .then((res)=>{
+                console.log(res);
+                window.location.href = "1st Page.html"
+            })
+                .catch((e)=>{alert("User already voted")})
+            }
+    }
+</script>
 </html>
     
